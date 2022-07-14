@@ -1,0 +1,86 @@
+
+<p-toast></p-toast>
+
+<div  class="contain">
+    <img src="../../assets/img/fruit-g1a8c61297_1920.jpg" alt="background">
+    <div class="form-row">
+        
+        <form [formGroup]="signform" (ngSubmit)="onSubmit()" class="p-grid p-fluid">
+            <h3>Employee Registration</h3>
+
+                <div class="p-col-12 ">
+                <div class="p-inputgroup inpbox">
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <input type="text" id="Name" formControlName="name" pInputText placeholder="Name">
+                           
+                </div>
+                <div *ngIf="f['name'].touched && f['name'].invalid" class="alert ">
+
+                        <div *ngIf="f['name'].errors && f['name'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+  
+                    </div>
+            </div>
+            
+            <div class="p-col-12 ">
+                <div class="p-inputgroup inpbox">
+                    <span class="p-inputgroup-addon"><i class="pi pi-phone"></i></span>
+                    <span class="p-inputgroup-addon">+91</span>
+                    <input type="number" id="contact" formControlName="contact" pInputText placeholder="Contact">
+                      
+                </div>
+                <div *ngIf="f['contact'].touched && f['contact'].invalid" class="alert ">
+
+                    <div *ngIf="f['contact'].errors && f['contact'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+
+                </div>
+            </div>
+                    
+            <div class="p-col-12 ">
+                <div class="p-inputgroup inpbox">
+                    <span class="p-inputgroup-addon">DOB</span>
+                    <input type="date" id="dob" max="2005-12-31" min="1980-01-01" formControlName="dob" pInputText placeholder="DOB">      
+                </div>
+                <div *ngIf="f['dob'].touched && f['dob'].invalid" class="alert ">
+
+                    <div *ngIf="f['dob'].errors && f['dob'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+
+                </div>
+            </div>
+        
+            <div class="p-col-12 ">
+                <div class="p-inputgroup inpbox">
+                    <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+                    <input type="email" id="email" formControlName="email" pInputText placeholder="E-mail">         
+                </div>
+                <div *ngIf="f['email'].touched && f['email'].invalid" class="alert ">
+
+                    <div *ngIf="f['email'].errors && f['email'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+
+                </div>
+            </div>
+            
+            <div class="p-col-12 ">
+                <div class="p-inputgroup inpbox">
+                    <span class="p-inputgroup-addon"><i class="pi pi-ellipsis-h"></i></span>
+                    <input type="password" id="password"  formControlName="password" pInputText placeholder="Password">        
+                </div>
+                <div *ngIf="f['password'].touched && f['password'].invalid" class="alert ">
+
+                    <div *ngIf="f['password'].errors && f['password'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+
+                </div>
+            </div>
+           
+            <input id="post" value="employee" type="hidden" formControlName="post">
+            <input id="status" value="false" type="hidden" formControlName="status">
+
+          
+
+        <a routerLink="/login" class="link" >Existing User ? Login.</a>
+            <button class="btn btn-primary" type="submit" [disabled]="signform.invalid">Sign Up</button><br>
+            
+        </form>
+    </div>
+    
+    
+</div>

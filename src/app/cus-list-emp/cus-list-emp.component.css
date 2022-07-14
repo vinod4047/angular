@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.navbar{
+padding: 0;
+background-color: #f1f1f1;
+border-bottom: #4154a7 2px solid;
+height: 75px;
+}
+.logo{
+ font-size: xx-large;
+ color: #ffffff;
+ background-image: linear-gradient(to bottom left,#4154a7,#5abde4,#4154a7);
+ padding: 5px;
+ letter-spacing: 2px;
+ font-family: 'Lobster';
+ border-radius: 50%;
+}
+
+.menu{
+ display: block;
+ width: 150px;
+ height: 35px;
+ font-size: 18px;
+ font-family: sans-serif;
+ text-decoration: none;
+ color: #000;
+ letter-spacing: 2px;
+ text-align: center;
+ position: relative;
+ transition: all .4s;
+}
+.menu::after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+border-bottom: #4154a7 2px solid;
+transition: all .35s;
+}
+
+.menu:hover{
+color: #4154a7;
+ 
+}
+.menu:hover::after{
+ width: 100%;
+}
+
+.contain{
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: #000 2px 2px 4px;
+  margin:50px;
+  padding: 10px;
+}
+.scroll{
+  height: 50vh;
+ overflow-y: scroll;
+}
+th{
+    height: 50px;
+    border-bottom:2px solid #4154a7;
+    text-align: center;
+}
+th,td{
+    text-align: center;
+}
+.btnn{
+    color: #4154a7;
+    background-color: #fff;
+    border: 2px solid #4154a7;
+    border-radius: 40%;
+}
+.btnn:hover{
+    box-shadow: 2px 2px 4px #000;
+    color:#ffffff;
+    background-color: #097200;
+    border: 2px solid #4154a7;
+}
+.btnn.del:hover{
+    background-color: #4154a7;
+}
+h1{
+  padding: 20px;
+  background: -webkit-linear-gradient(bottom left,#4154a7,#5abde4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.optn{
+    list-style: none;
+    text-decoration: none;
+    color: #505050;
+    position: relative;
+    transition: all .4s;
+  }
+  .optn::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: #4154a7 2px solid;
+  transition: all .4s;
+  }
+  .optn:hover{
+    color: #4154a7;
+  }
+  .optn:hover::after{
+    width: 100%;
+  }
+  li{
+    line-height: 30px;
+    list-style: none;
+    text-align: justify;
+  }
+  .option{
+    text-align: center;
+  }
+  footer{
+    padding: 30px;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: #4154a7 5px solid;
+    border-top: #4154a7 5px solid;
+  }
+  h3{
+    font-family:sans-serif;
+    margin: 10px;
+  }
+  i{
+    font-size: larger;
+    margin: 10px;
+    transition: all .35s;
+  }
+  i:hover{
+    color: #4154a7;
+  }
+  
+  .activeOpt{
+    color: #4154a7;
+    border-bottom: #4154a7 2px solid;
+    display: block;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .empDetail{
+    position: relative;
+   
+   }
+   
+   .popuptext{
+     position: absolute;
+     top:30px;
+     right: 10px;
+     width: 250px;
+      border-radius: 15px;
+     background-color: #666666bd;
+     box-shadow: 2px 2px 4px #000;
+     color: #f1f1f1;
+   }

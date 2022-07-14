@@ -1,0 +1,60 @@
+
+ 
+        <div id="htmlData" class="container col my-3 billList" >
+            <div class="contain">
+                <div class="logoContainer">
+                    <h3 class="logo">V-shop</h3>
+                </div>
+                    <h6 >Bill id: {{billInfo.id}}</h6>
+                    <br>
+                    <hr>
+                 
+                    <div class="row m-1"><h6 class="col">Customer Name &nbsp;:&nbsp;{{billInfo.customer}}</h6></div>
+                    <div class="row m-1"><h6 class="col">Customer Contact &nbsp; :&nbsp;{{billInfo.cusContact}}</h6></div>
+               
+                    <hr>
+             
+                <table class="table">
+                    <thead>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+             
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let prod of billInfo.product" scope="row">
+                        <td class="pro">{{prod.proName}}</td>
+                        <td class="proNum">{{prod.qty}} kg  = {{prod.price | currency:"INR":"symbol"}}</td>
+                        <td class="proNum">{{prod.tQty}}</td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody>
+                        
+                        <tr>
+                            <th></th>
+                            <th>Sub Total :</th>
+                            <th>{{billInfo.subTotal | currency:"INR":"symbol"}}</th>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                             <th>Discount :  {{billInfo.disc}} %</th>
+                            <th><h3>Total :</h3></th>
+                            <th><h3>{{billInfo.total | currency:"INR":"symbol"}}</h3></th> 
+                           
+                        </tr>
+                    </tbody>
+                   
+                   
+              </table>   
+            </div>
+            
+          
+        </div>
+        
+
+    <div class="col-md-4 text-right">
+      <button class="btn btn-success btn-block" (click)="openPDF()">Download PDF</button>
+
+    </div>

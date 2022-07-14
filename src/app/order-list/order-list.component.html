@@ -1,0 +1,91 @@
+<p-toast></p-toast>
+
+
+        <nav class="navbar navbar-expand-sm sticky-top ">
+            <div class="container-fluid px">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="logo">V-Shop</div>
+                <ul class="navbar-nav  gap-2">
+                    <li routerLink="/AEL" class="m-3 menu"><a>Employee list</a></li>
+                    <li routerLink="/cusAdm" class="m-3 menu"><a>Customer list</a></li>
+                    <li routerLink="/order" class="m-3 activeOpt"><a>Order list</a></li>
+                    <li routerLink="/proShow" class="m-3 menu">Show product</li>
+                    
+                </ul>
+                <ul class="navbar-nav ms-md-auto gap-2">
+                    <li routerLink="/login" class="m-3 menu"><a>Logout</a></li>
+                </ul>
+                <h3 class="profile" (click)="mydetail()"><i class="fa-solid fa-circle-user"></i></h3>
+                  <div *ngIf="bool" class="empDetail">
+                      <div  class="booltext p-3">
+                           <h5>Employee name : &nbsp; {{AdmId?.name}}</h5>
+                             <h5>Employee Id :  &nbsp;{{AdmId?.id}}</h5>
+                      </div>
+              </div>
+            </div>
+            </div>
+          </nav>
+        
+<div *ngIf="popup" class="confirm-box">
+
+        <div  class="popuptext p-3">
+            <h5 class="">Are you want to delete this bill  {{oId}} ?</h5>
+            <button class="btn text-danger" (click)="deleteInfo(oId)">yes</button>
+            <button class="btn text-secondary" (click)="myFunction(oId)">cancel</button>
+        </div>
+    
+   
+</div>
+<div class="contain">
+    <div class="scroll row">
+    <div class="container col-4 my-3 billList" *ngFor="let arr of user ">
+        <div class="billhead row">
+           <h4 class="col">Bill id: {{arr.id}}</h4>
+            <h4  class="col">Employee id: {{arr.empId}}</h4>
+        </div>
+
+        
+           <div class="row m-1"><h6 class="col">Customer Name &nbsp;:</h6><span class="col">{{arr.customer}}</span></div>
+           <div class="row m-1"><h6 class="col">Customer Contact &nbsp; :</h6><span class="col">{{arr.cusContact}}</span></div>
+      
+
+       <table class="table">
+           <thead>
+               <th scope="col">Product</th>
+               <th scope="col">Price</th>
+               <th scope="col">Quantity</th>
+
+           </thead>
+           <tbody>
+               <tr *ngFor="let prod of arr.product" scope="row">
+               <td>{{prod.proName}}</td>
+               <td>{{prod.qty}} kg  = {{prod.price | currency:"INR":"symbol"}}</td>
+               <td>{{prod.tQty}}</td>
+               </tr>
+           </tbody>
+           
+           <tbody>
+               
+               <tr>
+                   <th>Discount :  {{arr.disc}} %</th>
+                   <th>Sub Total :</th>
+                   <th>{{arr.subTotal | currency:"INR":"symbol"}}</th>
+               </tr>
+           </tbody>
+           <tbody>
+               <tr>
+                   <th><h3>Total :</h3></th>
+                   <th><h3>{{arr.total | currency:"INR":"symbol"}}</h3></th> 
+                   <td><button class="btnn " (click)="myFunction(arr.id)" ><i class="fa-solid fa-trash-can"></i></button></td>
+               </tr>
+           </tbody>
+          
+          
+       </table> 
+      
+</div>
+
+   </div>
+   
+</div>
+

@@ -1,0 +1,31 @@
+
+form{
+    background-color: #f1f1f1;
+    line-height: 30px;
+    padding: 30px;
+}
+input{
+    text-align: center;
+    border: none;
+    width: 100%;
+    height: 50px;
+}
+.btn{
+    margin-top: 30px;
+    color:#fff;
+    background-color: #0000ff;
+    box-shadow: 2px 2px 4px #00087e;
+    width: 100%;
+}
+.btn:hover{
+    color:#0000ff;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px #00087e;
+}
+.btnCont{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+input:focus{
+    outline: none;
+}

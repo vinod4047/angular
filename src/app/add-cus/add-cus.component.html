@@ -1,0 +1,40 @@
+
+
+    
+ 
+            <form [formGroup]="cusform" (ngSubmit)="onSubmit()" >
+                
+                <label for="Name">Name: </label><br>
+                <input type="text" id="Name" formControlName="name"><br>
+                <div *ngIf="f['name'].touched && f['name'].invalid" class="alert ">
+    
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+  
+              </div>
+            
+                <label for="contact">Contact: </label><br>
+                <input type="number" id="contact" formControlName="contact"><br>
+                <div *ngIf="f['contact'].touched && f['contact'].invalid" class="alert ">
+    
+                  <div *ngIf="f['contact'].errors && f['contact'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+  
+              </div>
+            
+                <label for="email">E-mail: </label><br>
+                <input type="email" id="email" formControlName="email"><br><br>
+                <div *ngIf="f['email'].touched && f['email'].invalid" class="alert ">
+    
+                  <div *ngIf="f['email'].errors && f['email'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+  
+              </div>
+              <div class="col">
+                 <button class="btn" type="submit" [disabled]="cusform.invalid">Submit</button>
+              </div>
+              <br>
+               
+            </form>
+
+
+
+
+

@@ -1,0 +1,122 @@
+
+<div class="container ">
+    <form [formGroup]="editForm" class="p-grid p-fluid">
+
+        <div class="row">
+
+
+            <div class="col ">
+                <label for="Name">Name: </label><br>
+                <div class="p-inputgroup inpbox">
+                    
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    
+                    <input type="text" id="Name" formControlName="name" pInputText >
+                           
+                </div>
+                <div *ngIf="f['name'].touched && f['name'].invalid" class="alert ">
+    
+                        <div *ngIf="f['name'].errors && f['name'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+    
+                    </div>
+            </div>
+    
+            <div class="col ">
+                <label for="contact">Contact: </label><br>
+                <div class="p-inputgroup inpbox">
+                    
+                    <span class="p-inputgroup-addon"><i class="pi pi-phone"></i></span>
+                    <span class="p-inputgroup-addon">+91</span>
+                    
+                    <input type="number" id="contact" formControlName="contact" pInputText >
+                      
+                </div>
+                <div *ngIf="f['contact'].touched && f['contact'].invalid" class="alert ">
+    
+                    <div *ngIf="f['contact'].errors && f['contact'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+    
+                </div>
+            </div>
+
+
+        </div>
+
+            
+        <div class="row">
+
+                    
+            <div class="col "> 
+                <label for="dob">DOB: </label><br>
+                <div class="p-inputgroup inpbox">
+                   
+                    <span class="p-inputgroup-addon">DOB</span>
+                    <input type="date" id="dob" max="2005-12-31" min="1980-01-01" formControlName="dob" pInputText >      
+                </div>
+                <div *ngIf="f['dob'].touched && f['dob'].invalid" class="alert ">
+    
+                    <div *ngIf="f['dob'].errors && f['dob'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+    
+                </div>
+            </div>
+ 
+            <div class="col">
+                 <label for="status">Status: </label><br>
+                <div class="inpbox">
+                   
+                    <p-dropdown [options]="act" [(ngModel)]="selectedCity1"  formControlName="status"></p-dropdown>     
+                </div>
+               
+            </div>
+           <input id="post" value="employee" type="hidden" formControlName="post">
+
+
+        </div>
+        <div class="row">
+
+
+            <div class="col "> 
+                <label for="email">E-mail: </label><br>
+                <div class="p-inputgroup inpbox">
+                   
+                    <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+    
+                    <input type="email" id="email" formControlName="email" pInputText >         
+                </div>
+                <div *ngIf="f['email'].touched && f['email'].invalid" class="alert ">
+    
+                    <div *ngIf="f['email'].errors && f['email'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+    
+                </div>
+            </div>
+            
+            <div class="col ">
+                <label for="password">Password: </label><br>
+                <div class="p-inputgroup inpbox">
+                    
+                    <span class="p-inputgroup-addon"><i class="pi pi-ellipsis-h"></i></span>
+                    <input type="text" id="password" formControlName="password" pInputText >        
+                </div>
+                <div *ngIf="f['password'].touched && f['password'].invalid" class="alert ">
+    
+                    <div *ngIf="f['password'].errors && f['password'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
+    
+                </div>
+            </div>
+    
+
+        </div>
+        
+       
+
+        <div class="row">
+            <div class="col">
+                <button class="btn" type="submit" (click)="updateInfo()" [disabled]="editForm.invalid" >update.</button>
+            </div>
+        </div>
+
+        
+
+        
+       
+    </form> 
+</div>

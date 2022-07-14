@@ -1,0 +1,25 @@
+
+    <form  [formGroup]="editForm" >
+        
+        <label for="proName">Product Name: </label><br>
+        <input type="text" id="proName" formControlName="proName"><br>
+
+    <div class="row">
+
+        <div class="col">
+            <label for="qty">Quantity: </label>
+        <input type="number" id="qty" formControlName="qty"><br>
+    </div>
+        <div class="col">
+            <label for="price">Price: </label><br>
+        <input type="number" id="price" formControlName="price">
+        </div>
+
+    </div>
+       <div class="btnCont">
+        <button  class="btn" type="submit" (click)="updateInfo()" [disabled]="editForm.invalid" >update.</button>
+       </div>
+           
+
+    </form> 
+

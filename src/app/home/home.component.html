@@ -1,0 +1,135 @@
+
+  
+<nav class="navbar navbar-expand-sm sticky-top ">
+  <div class="container-fluid px">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="logo">V-Shop</div>
+      <ul class="navbar-nav  gap-2">
+         <li routerLink="/home" class="m-3 activeOpt"><a>Home</a></li>
+        <li routerLink="/bill" class="m-3 menu"><a>Billing</a></li>
+          <li routerLink="/cusEmp" class="m-3 menu"><a>Customer list</a></li>
+          
+      </ul>
+      <ul class="navbar-nav ms-md-auto gap-2">
+          <li routerLink="/login" class="m-3 menu"><a>Logout</a></li>
+      </ul>
+      <h3 class="profile" (click)="mydetail()"><i class="fa-solid fa-circle-user"></i></h3>
+        <div *ngIf="popup" class="empDetail">
+            <div  class="popuptext p-3">
+                 <h5>Employee name : &nbsp; {{EmpId?.name}}</h5>
+                   <h5>Employee Id :  &nbsp;{{EmpId?.id}}</h5>
+            </div>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<div class="slide sm-12 lg-12 md-12">
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active slide" data-bs-interval="3000">
+        <img src="../../assets/img/berries-2277_960_720.webp" class="d-block w-100" >
+      </div>
+      <div class="carousel-item slide" data-bs-interval="3000">
+        <img src="../../assets/img/bananas-698608_960_720.jpg" class="d-block w-100" >
+      </div>
+      <div class="carousel-item slide" data-bs-interval="3000">
+        <img src="../../assets/img/supermarket-949913_960_720.webp" class="d-block w-100" >
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+
+<div class="container-fluid ">
+  <div class="row">
+  <div class="card col-sm-3 col-md-3 col-lg-3 m-4">
+    <img src="../../assets/img/pngtree-delivery-boy-with-mask-riding-bike-vector-png-image_2187935-removebg-preview.png" class="card-img sm-3" alt="...">
+    <h3>24 x 7 Delivery.</h3>
+  </div>
+
+  <div class="card col-sm-3 col-md-3 col-lg-3 m-4">
+    <img src="../../assets/img/pngtree-premium-quality-logo-design-image_496628-removebg-preview.png" class="card-img sm-3" alt="...">
+    <h3>Premium quality.</h3>
+  </div>
+
+  <div class="card col-sm-3 col-md-3 col-lg-3 m-4">
+    <img src="../../assets/img/pngtree-time-emblem-365-infinity-logo-icon-design-illustration-vector-image_306729-removebg-preview.png" class="card-img sm-3" alt="...">
+    <h3>Open 365 days.</h3>
+  </div>
+
+</div>
+</div>
+
+<div class=" bg-white lg-12">
+  <footer>
+      <div class="container">
+          <div class="row  justify-content-center">
+              <div class="col-sm-4 col-md-3 option">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#" class="optn">Web design</a></li>
+                      <li><a href="#" class="optn">Development</a></li>
+                      <li><a href="#" class="optn">Hosting</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 option">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#" class="optn">Company</a></li>
+                      <li><a href="#" class="optn">Team</a></li>
+                      <li><a href="#" class="optn">Legacy</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 option">
+                  <h3>Careers</h3>
+                  <ul>
+                      <li><a href="#" class="optn">Job openings</a></li>
+                      <li><a href="#" class="optn">Employee success</a></li>
+                      <li><a href="#" class="optn">Benefits</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 ">
+
+                <br>
+               
+                <p class="copyright">Company Name © 2018</p> 
+                 <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Ce%7Cfacebook%7C&placement=&creative=550525804791&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1001394929%26loc_physical_ms%3D1007809%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwwo-WBhAMEiwAV4dybcRNplziHRmILzOpafh88EO0p3U2ZjxRuQx__DccOIwew6XUOUlLTxoCj_cQAvD_BwE"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+             
+               
+            </div>
+          </div>
+      </div>
+  </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+

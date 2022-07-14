@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.navbar{
+  padding: 0;
+  background-color: #f1f1f1;
+  border-bottom: #4154a7 2px solid;
+  height: 75px;
+}
+.logo{
+  font-size: xx-large;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom left,#4154a7,#5abde4,#4154a7);
+  padding: 5px;
+  letter-spacing: 2px;
+  font-family: 'Lobster';
+  border-radius: 50%;
+}
+.menu{
+    display: block;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .4s;
+}
+.menu::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: #4154a7 2px solid;
+  transition: all .35s;
+}
+span{
+    position: relative;
+    z-index: 2;
+}
+.menu:hover{
+   color: #4154a7;
+    
+}
+.menu:hover::after{
+    width: 100%;
+}
+.slide{
+    height: 450px;
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+}
+.card h3{
+
+    font-family: 'Lobster';
+}
+.card{
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: #4154a7;
+    background-color: #f1f1f1;
+    box-shadow: #000 2px 2px 4px ;
+    position: relative;
+    transition: all .4s;
+    height: 300px;
+}
+.card::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4154a70d;
+    border-bottom: #4154a7 5px solid;
+    border-top: #4154a7 5px solid;
+    box-shadow: 2px 2px 4px #000;
+    transition: all .4s;
+  }
+  .card:hover{
+    transform: scale(102%);
+    color: #ffa600;
+  }
+  .card:hover::after{
+    width:100%
+  }
+  .optn{
+    list-style: none;
+    text-decoration: none;
+    color: #505050;
+    position: relative;
+    transition: all .4s;
+  }
+  .optn::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: #4154a7 2px solid;
+  transition: all .4s;
+  }
+  .optn:hover{
+    color: #4154a7;
+  }
+  .optn:hover::after{
+    width: 100%;
+  }
+  li{
+    line-height: 30px;
+    list-style: none;
+    text-align: justify;
+  }
+  .option{
+    text-align: center;
+  }
+  footer{
+    padding: 30px;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: #4154a7 5px solid;
+    border-top: #4154a7 5px solid;
+  }
+  h3{
+    font-family:sans-serif;
+    margin: 10px;
+  }
+  i{
+    font-size: larger;
+    margin: 10px;
+    transition: all .35s;
+  }
+  i:hover{
+    color: #4154a7;
+  }
+  .activeOpt{
+    color: #4154a7;
+    border-bottom: #4154a7 2px solid;
+    display: block;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .empDetail{
+    position: relative;
+   
+   }
+   
+   .popuptext{
+     position: absolute;
+     top:30px;
+     right: 10px;
+     width: 250px;
+      border-radius: 15px;
+     background-color: #4b4a4abd;
+     box-shadow: 2px 2px 4px #000;
+     color: #f1f1f1;
+   }

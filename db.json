@@ -1,0 +1,451 @@
+{
+  "employee": [
+    {
+      "name": "vino",
+      "dob": "2000-11-13",
+      "contact": 2525252555,
+      "email": "vino@v.shop",
+      "password": "123",
+      "post": "admin",
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "name": "vino",
+      "dob": "2002-06-15",
+      "contact": 2525252555,
+      "email": "vino@emp.com",
+      "password": "147",
+      "post": "employee",
+      "status": "Active",
+      "id": 2
+    },
+    {
+      "name": "jayamurugan",
+      "dob": "2000-07-19",
+      "contact": 2020202020,
+      "email": "popo@o.ooo",
+      "password": "20202020",
+      "post": "employee",
+      "status": false,
+      "id": 3
+    }
+  ],
+  "CusInfo": [
+    {
+      "name": "vinod",
+      "contact": 1111111111,
+      "email": "vino@v.shop",
+      "id": 1
+    },
+    {
+      "name": "hariprasad",
+      "contact": 2020202020,
+      "email": "popopo@o.ooo",
+      "id": 2
+    },
+    {
+      "name": "hari",
+      "contact": 7987654322,
+      "email": "vv@vv.vv",
+      "id": 3
+    },
+    {
+      "name": "amen",
+      "contact": 1111111222,
+      "email": "rfg@gfsd.fghh",
+      "id": 4
+    },
+    {
+      "name": "aren",
+      "contact": 3030303030,
+      "email": "aot@c.com",
+      "id": 5
+    },
+    {
+      "name": "vinod",
+      "contact": 2020202020,
+      "email": "vino@emp.com",
+      "id": 7
+    },
+    {
+      "name": "ajith",
+      "contact": 2298765444,
+      "email": "ja@aj.aj",
+      "id": 8
+    }
+  ],
+  "Products": [
+    {
+      "proName": "apple",
+      "qty": 1,
+      "price": 87,
+      "id": 1
+    },
+    {
+      "proName": "orange",
+      "qty": 1,
+      "price": 68,
+      "id": 2
+    },
+    {
+      "proName": "banana",
+      "qty": 1,
+      "price": 42,
+      "id": 3
+    },
+    {
+      "proName": "blueberry",
+      "qty": 1,
+      "price": 95,
+      "id": 4
+    },
+    {
+      "proName": "jack friut",
+      "qty": 1,
+      "price": 105,
+      "id": 5
+    },
+    {
+      "proName": "peach",
+      "qty": 1,
+      "price": 97,
+      "id": 6
+    },
+    {
+      "proName": "pomegranate",
+      "qty": 1,
+      "price": 143,
+      "id": 7
+    },
+    {
+      "proName": "mango",
+      "qty": 1,
+      "price": 76,
+      "id": 8
+    },
+    {
+      "proName": "grapes",
+      "qty": 1,
+      "price": 53,
+      "id": 9
+    }
+  ],
+  "Orders": [
+    {
+      "id": "_jkdd6f5hx",
+      "customer": "aren",
+      "cusContact": 3030303030,
+      "CusMail": "aot@c.com",
+      "product": [
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        },
+        {
+          "proName": "banana",
+          "qty": 1,
+          "price": 42,
+          "tQty": "1",
+          "amount": 42
+        },
+        {
+          "proName": "peach",
+          "qty": 1,
+          "price": 97,
+          "tQty": 1.5,
+          "amount": 145.5
+        },
+        {
+          "proName": "grapes",
+          "qty": 1,
+          "price": 53,
+          "tQty": 2,
+          "amount": 106
+        },
+        {
+          "proName": "blueberry",
+          "qty": 1,
+          "price": 95,
+          "tQty": 0.5,
+          "amount": 47.5
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 409,
+      "disc": 10,
+      "total": 368.1
+    },
+    {
+      "id": "_5zpgpql4k",
+      "customer": "hariprasad",
+      "cusContact": 2020202020,
+      "CusMail": "popopo@o.ooo",
+      "product": [
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        },
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "banana",
+          "qty": 1,
+          "price": 42,
+          "tQty": "1",
+          "amount": 42
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 197,
+      "disc": 5,
+      "total": 187.15
+    },
+    {
+      "id": "_2yo8oww16",
+      "customer": "amen",
+      "cusContact": 1111111222,
+      "CusMail": "rfg@gfsd.fghh",
+      "product": [
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        },
+        {
+          "proName": "blueberry",
+          "qty": 1,
+          "price": 95,
+          "tQty": "1",
+          "amount": 95
+        },
+        {
+          "proName": "jack friut",
+          "qty": 1,
+          "price": 105,
+          "tQty": "1",
+          "amount": 105
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 355,
+      "disc": 5,
+      "total": 337.25
+    },
+    {
+      "id": "_qlmqdljl5",
+      "customer": "ajith",
+      "cusContact": 2298765444,
+      "CusMail": "ja@aj.aj",
+      "product": [
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        },
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "banana",
+          "qty": 1,
+          "price": 42,
+          "tQty": "1",
+          "amount": 42
+        },
+        {
+          "proName": "blueberry",
+          "qty": 1,
+          "price": 95,
+          "tQty": "1",
+          "amount": 95
+        },
+        {
+          "proName": "pomegranate",
+          "qty": 1,
+          "price": 143,
+          "tQty": 1.5,
+          "amount": 214.5
+        },
+        {
+          "proName": "mango",
+          "qty": 1,
+          "price": 76,
+          "tQty": "1",
+          "amount": 76
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 582.5,
+      "disc": 15,
+      "total": 495.125
+    },
+    {
+      "id": "_gibi27276",
+      "customer": "hariprasad",
+      "cusContact": 2020202020,
+      "CusMail": "popopo@o.ooo",
+      "product": [
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": 2.5,
+          "amount": 170
+        },
+        {
+          "proName": "banana",
+          "qty": 1,
+          "price": 42,
+          "tQty": "1",
+          "amount": 42
+        },
+        {
+          "proName": "blueberry",
+          "qty": 1,
+          "price": 95,
+          "tQty": "1",
+          "amount": 95
+        },
+        {
+          "proName": "jack friut",
+          "qty": 1,
+          "price": 105,
+          "tQty": "1",
+          "amount": 105
+        },
+        {
+          "proName": "pomegranate",
+          "qty": 1,
+          "price": 143,
+          "tQty": "1",
+          "amount": 143
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 642,
+      "disc": 10,
+      "total": 577.8
+    },
+    {
+      "id": "_dijnvzcxr",
+      "customer": "aren",
+      "cusContact": 3030303030,
+      "CusMail": "aot@c.com",
+      "product": [
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        },
+        {
+          "proName": "banana",
+          "qty": 1,
+          "price": 42,
+          "tQty": "1",
+          "amount": 42
+        },
+        {
+          "proName": "peach",
+          "qty": 1,
+          "price": 97,
+          "tQty": "1",
+          "amount": 97
+        },
+        {
+          "proName": "jack friut",
+          "qty": 1,
+          "price": 105,
+          "tQty": "1",
+          "amount": 105
+        },
+        {
+          "proName": "blueberry",
+          "qty": 1,
+          "price": 95,
+          "tQty": 1.5,
+          "amount": 142.5
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 541.5,
+      "disc": 10,
+      "total": 487.35
+    },
+    {
+      "id": "_0cwxu6j0f",
+      "customer": "vinod",
+      "cusContact": 1111111111,
+      "CusMail": "vino@v.shop",
+      "product": [
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 155,
+      "disc": 5,
+      "total": 147.25
+    }
+  ]
+}

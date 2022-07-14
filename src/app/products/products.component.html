@@ -1,0 +1,20 @@
+
+        <form [formGroup]="addPro" (ngSubmit)="onSubmit()">
+            
+            <label for="proName">Product Name: </label><br>
+            <input type="text" id="proName" formControlName="proName"><br>
+        
+            <label for="qty">Quantity: </label><br>
+            <input type="number" id="qty" formControlName="qty"><br>
+        
+            <label for="price">Price: </label><br>
+            <input type="number" id="price" formControlName="price"><br>
+            <br>
+            <div class="btnCont">
+                <button class="btn btn-primary" type="submit" [disabled]="addPro.invalid">Add Product.</button>
+            </div>
+            
+            
+        
+            
+        </form>
