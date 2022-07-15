@@ -6,6 +6,7 @@ nav{
 .logo{
   font-size: xx-large;
   color: #ffffff;
+  width: max-content;
   background-image: linear-gradient(to bottom left,#942222,#e45aa6,#942222);
   padding: 5px;
   letter-spacing: 2px;
@@ -201,4 +202,49 @@ h4{
   }
   .mary:hover{
     box-shadow: #000 2px 2px 4px;
+  }
+  @media screen and (max-width: 940px) {
+    .navbar{
+      padding: 0;
+      width: fit-content;
+      background-color: #f1f1f1;
+      border-bottom: #942222 2px solid;
+  
+    }
+    .logo{
+      font-size: larger;
+      color: #ffffff;
+      width:max-content;
+      background-image: linear-gradient(to bottom left,#942222,#e45aa6,#942222);
+      padding: 5px;
+      letter-spacing: 2px;
+      font-family: 'Lobster';
+      border-radius: 50%;
+     }
+     
+     .menu{
+      display: block;
+      width: 140px;
+      height: 35px;
+      font-size: 15px;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #000;
+      letter-spacing: 2px;
+      text-align: center;
+      position: relative;
+      transition: all .4s;
+     }
+     .activeOpt{
+      color: #942222;
+      border-bottom: #942222 2px solid;
+      display: block;
+      width: 140px;
+      height: 35px;
+      font-size: 15px;
+      font-family: sans-serif;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-align: center;
+    }
   }

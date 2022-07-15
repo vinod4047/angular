@@ -24,9 +24,9 @@ export class SignupComponent implements OnInit {
     dob: new FormControl('', Validators.required),
     contact : new FormControl('',[Validators.required,Validators.pattern('[0-9]{10}')]),
     email : new FormControl('',[Validators.required,Validators.email]),
-    password : new FormControl('',Validators.required),
+    password : new FormControl('',[Validators.required,Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{5,15}')]),
     post: new FormControl('employee'),
-    status : new FormControl(false)
+    status : new FormControl('In-active')
   })
   }
 

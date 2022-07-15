@@ -15,20 +15,10 @@
       "dob": "2002-06-15",
       "contact": 2525252555,
       "email": "vino@emp.com",
-      "password": "147",
+      "password": "Vin@2000",
       "post": "employee",
       "status": "Active",
       "id": 2
-    },
-    {
-      "name": "jayamurugan",
-      "dob": "2000-07-19",
-      "contact": 2020202020,
-      "email": "popo@o.ooo",
-      "password": "20202020",
-      "post": "employee",
-      "status": false,
-      "id": 3
     }
   ],
   "CusInfo": [
@@ -73,6 +63,12 @@
       "contact": 2298765444,
       "email": "ja@aj.aj",
       "id": 8
+    },
+    {
+      "name": "hari",
+      "contact": 2020202020,
+      "email": "tyrt@fgh.rtgr",
+      "id": 9
     }
   ],
   "Products": [
@@ -446,6 +442,74 @@
       "subTotal": 155,
       "disc": 5,
       "total": 147.25
+    },
+    {
+      "id": "_duwgf98e7",
+      "customer": "hari",
+      "cusContact": 2020202020,
+      "CusMail": "tyrt@fgh.rtgr",
+      "product": [
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        },
+        {
+          "proName": "banana",
+          "qty": 1,
+          "price": 42,
+          "tQty": "1",
+          "amount": 42
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 197,
+      "disc": 10,
+      "total": 177.3
+    },
+    {
+      "id": "_td5sx3bi7",
+      "customer": "hari",
+      "cusContact": 7987654322,
+      "CusMail": "vv@vv.vv",
+      "product": [
+        {
+          "proName": "apple",
+          "qty": 1,
+          "price": 87,
+          "tQty": "1",
+          "amount": 87
+        },
+        {
+          "proName": "orange",
+          "qty": 1,
+          "price": 68,
+          "tQty": "1",
+          "amount": 68
+        },
+        {
+          "proName": "banana",
+          "qty": 1,
+          "price": 42,
+          "tQty": "1",
+          "amount": 42
+        }
+      ],
+      "empId": 2,
+      "empName": "vino",
+      "subTotal": 197,
+      "disc": 10,
+      "total": 177.3
     }
   ]
 }

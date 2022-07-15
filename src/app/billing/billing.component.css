@@ -3,13 +3,15 @@
 
 .navbar{
   padding: 0;
+  width: 100%;
   background-color: #f1f1f1;
   border-bottom: #4154a7 2px solid;
-  height: 75px;
+
 }
 .logo{
   font-size: xx-large;
   color: #ffffff;
+  width: max-content;
   background-image: linear-gradient(to bottom left,#4154a7,#5abde4,#4154a7);
   padding: 5px;
   letter-spacing: 2px;
@@ -73,10 +75,11 @@
 }
 .left{
     float: left;
-   
+    width: 50%;
 }
 .right{
     float: right;
+    width: 50%;
 }
 table{
     text-align: center ;
@@ -86,7 +89,7 @@ span{
     float: right;
    
 }
-th{
+.tabHead{
     border-bottom: 2px solid #5abde4 ;
     
 }
@@ -222,7 +225,7 @@ h1{
 }
 .product{
   overflow-y: scroll;
-  height: 80vh;
+  height: 90vh;
 } 
 .mary {
   background: #4154a7;
@@ -309,6 +312,84 @@ margin-left:0 ;
 margin-right:0 ;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 940px) {
+  .navbar{
+    padding: 0;
+    width: fit-content;
+    background-color: #f1f1f1;
+    border-bottom: #4154a7 2px solid;
+
+  }
+  .logo{
+    font-size: larger;
+    color: #ffffff;
+    width:max-content;
+    background-image: linear-gradient(to bottom left,#4154a7,#5abde4,#4154a7);
+    padding: 5px;
+    letter-spacing: 2px;
+    font-family: 'Lobster';
+    border-radius: 50%;
+   }
+   
+   .menu{
+    display: block;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .4s;
+   }
+   .activeOpt{
+    color: #4154a7;
+    border-bottom: #4154a7 2px solid;
+    display: block;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .left{
+    float: left;
+    width: 100%;
   
 }
+.right{
+    float: right;
+    width: 100%;
+}
+  .bill-cont{
+    margin: 20px;
+    background-color: #f1f1f1 ;
+    box-shadow: #000 2px 2px 4px;
+    border-radius: 10px;
+    padding-bottom: 60px;
+    width: fit-content;
+   
+  }
+  .scroll{
+    overflow-y: scroll;
+    height: 40vh;
+  
+  }
+  .pro-cont{
+     margin: 20px;
+    background-color: #f1f1f1 ;
+    box-shadow: #000 2px 2px 4px;
+    border-radius: 10px;
+    padding-bottom: 60px;
+    
+  }
+  .product{
+    overflow-y: scroll;
+    height: 90vh;
+  } 
+}
+

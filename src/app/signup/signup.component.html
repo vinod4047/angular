@@ -6,7 +6,7 @@
     <div class="form-row">
         
         <form [formGroup]="signform" (ngSubmit)="onSubmit()" class="p-grid p-fluid">
-            <h3>Employee Registration</h3>
+            <div class="title">Employee Registration</div>
 
                 <div class="p-col-12 ">
                 <div class="p-inputgroup inpbox">
@@ -64,7 +64,7 @@
                     <span class="p-inputgroup-addon"><i class="pi pi-ellipsis-h"></i></span>
                     <input type="password" id="password"  formControlName="password" pInputText placeholder="Password">        
                 </div>
-                <div *ngIf="f['password'].touched && f['password'].invalid" class="alert ">
+                <div *ngIf="f['password'].touched && f['password'].invalid" class="alert "><i class="fa-solid fa-circle-exclamation"></i> create password with A-Z a-z symbols 0-9
 
                     <div *ngIf="f['password'].errors && f['password'].errors['required']"><i class="fa-solid fa-circle-exclamation"></i> Invalid error</div>
 

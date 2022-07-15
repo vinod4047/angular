@@ -3,32 +3,35 @@
 
 .navbar{
   padding: 0;
+  width: 100%;
   background-color: #f1f1f1;
   border-bottom: #4154a7 2px solid;
-  height: 75px;
+
 }
 .logo{
   font-size: xx-large;
   color: #ffffff;
+  width: max-content;
   background-image: linear-gradient(to bottom left,#4154a7,#5abde4,#4154a7);
   padding: 5px;
   letter-spacing: 2px;
   font-family: 'Lobster';
   border-radius: 50%;
-}
-.menu{
-    display: block;
-    width: 150px;
-    height: 35px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #000;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .4s;
-}
+ }
+ 
+ .menu{
+  display: block;
+  width: 150px;
+  height: 35px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .4s;
+ }
 .menu::after{
   position: absolute;
   content: "";
@@ -175,3 +178,48 @@ span{
      box-shadow: 2px 2px 4px #000;
      color: #f1f1f1;
    }
+   @media screen and (max-width: 940px) {
+    .navbar{
+      padding: 0;
+      width: fit-content;
+      background-color: #f1f1f1;
+      border-bottom: #4154a7 2px solid;
+  
+    }
+    .logo{
+      font-size: larger;
+      color: #ffffff;
+      width:max-content;
+      background-image: linear-gradient(to bottom left,#4154a7,#5abde4,#4154a7);
+      padding: 5px;
+      letter-spacing: 2px;
+      font-family: 'Lobster';
+      border-radius: 50%;
+     }
+     
+     .menu{
+      display: block;
+      width: 150px;
+      height: 35px;
+      font-size: 18px;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #000;
+      letter-spacing: 2px;
+      text-align: center;
+      position: relative;
+      transition: all .4s;
+     }
+     .activeOpt{
+      color: #4154a7;
+      border-bottom: #4154a7 2px solid;
+      display: block;
+      width: 150px;
+      height: 35px;
+      font-size: 18px;
+      font-family: sans-serif;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+  }

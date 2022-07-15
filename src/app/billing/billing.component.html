@@ -1,5 +1,5 @@
 
-     <nav class="navbar navbar-expand-sm sticky-top">
+     <nav class="navbar navbar-expand sticky-top">
     <div class="container-fluid px">
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="logo">V-Shop</div>
@@ -29,7 +29,7 @@
  <p-toast></p-toast>
 
     
-<div class="left col-md-6 col-lg-6 col-sm-12 my-3">
+<div class="left col-md-12 col-lg-6 col-sm-12 my-3 ">
 
     <div class="w-100 h-100 bill-cont px-5 ">
 
@@ -43,7 +43,7 @@
 
             <div class="scroll">
             <table class="table " scope="row">
-            <thead>
+            <thead class="sticky-top tabHead bg-white ">
                 <th scope="col">PRODUCT</th>
                 <th scope="col">PRICE /Kg</th>
                 <th scope="col">QUANTITY /Kg</th>
@@ -70,10 +70,10 @@
        <div class="row">
         
         <form [formGroup]="discount" class="dis-cont col-6">
-            <label for="discount">Discount: </label>&nbsp;
+            <label for="discount">Discount: </label>
         <input class="discount" type="number" placeholder="  %" formControlName="count" (change)="discountCal()"><i class="fa-solid fa-percent"></i><br>
         </form>
-        <div class="container-fluid total col-6"><strong>Payable Amount</strong>  <span> <strong>{{dPrice | currency:"INR":"symbol"}}</strong></span></div>
+        <div class="container-fluid total col-6"><strong>Payable Amount {{dPrice | currency:"INR":"symbol"}}</strong></div>
        </div>
         
        <div class="save">
@@ -91,7 +91,7 @@
 
 </div>
 
-<div class="right col-md-6 col-lg-6 col-sm-12 my-3">
+<div class="right col-md-12 col-lg-6 col-sm-12 my-3">
 
     <div class=" pro-cont h-100 w-100">
        
@@ -130,8 +130,7 @@
 
 </div>
 <br>
-<div class="bg-white ">
-    <footer>
+    <footer class="bg-white">
     <div class="container">
         <div class="row  justify-content-center">
             <div class="col-sm-4 col-md-3 option">
@@ -173,5 +172,4 @@
         </div>
     </div>
 </footer>
-</div>
 
