@@ -91,7 +91,7 @@ span{
 }
 .tabHead{
     border-bottom: 2px solid #5abde4 ;
-    
+    z-index:9;
 }
 td{
   border-bottom: 2px solid #4154a7 ;

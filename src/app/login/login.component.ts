@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
   constructor(private api:ApiService , private router:Router, private messageService:MessageService) { }
 
   ngOnInit(): void {
+    localStorage.clear();
     this.logform = new FormGroup({
     email : new FormControl('',[Validators.required,Validators.email]),
     password : new FormControl('',Validators.required)

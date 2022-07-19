@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, ActivationEnd, Router } from '@angular/router';
 import {DynamicDialogRef} from 'primeng/dynamicdialog';
 import {DynamicDialogConfig} from 'primeng/dynamicdialog';
 import { ApiService } from '../service/api.service';
@@ -22,7 +21,7 @@ export class EmpUpdateDialogComponent implements OnInit {
   act!: string[];
   selectedCity1!: string;
               
-      constructor( public ref: DynamicDialogRef, public config: DynamicDialogConfig, private api:ApiService,private activeRoute:ActivatedRoute,private route:Router) { }
+      constructor( public ref: DynamicDialogRef, public config: DynamicDialogConfig, private api:ApiService) { }
   
       ngOnInit() {
         this.editForm = new FormGroup({

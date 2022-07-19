@@ -1,0 +1,30 @@
+.tabview-custom i span {
+    vertical-align: middle;
+}
+
+.tabview-custom span {
+    margin: 0 .5rem;
+}
+ .p-button {
+    margin-right: .25rem;
+}
+
+ .p-tabview p {
+    line-height: 1.5;
+    margin: 0;
+}
+.fruit{
+    max-height: 500px;
+    max-width: 500px;
+   
+}
+.fruittext{
+    text-align: justify;
+    font-size: large;
+}
+img{
+    border-radius: 50px;
+    object-fit:cover;
+    height: 100%;
+     width: 100%;
+}

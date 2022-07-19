@@ -29,6 +29,9 @@ import { BillCusComponent } from './bill-cus/bill-cus.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { PrintComponent } from './print/print.component';
 import { DropdownModule } from 'primeng/dropdown';
+import { AboutComponent } from './about/about.component';
+import { TabViewModule } from 'primeng/tabview';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,9 @@ import { DropdownModule } from 'primeng/dropdown';
     OrderListComponent,
     EmpUpdateDialogComponent,
     BillCusComponent,
-    PrintComponent
+    PrintComponent,
+    AboutComponent,
+    ProfileComponent
     
   ],
   imports: [
@@ -65,6 +70,7 @@ import { DropdownModule } from 'primeng/dropdown';
     MenubarModule,
     InputSwitchModule,
     Ng2SearchPipeModule,
+    TabViewModule,
     DropdownModule
     
   ],

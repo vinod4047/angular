@@ -11,15 +11,22 @@
           
       </ul>
       <ul class="navbar-nav ms-md-auto gap-2">
-          <li routerLink="/login" class="m-3 menu"><a>Logout</a></li>
-      </ul>
-      <h3 class="profile" (click)="mydetail()"><i class="fa-solid fa-circle-user"></i></h3>
-        <div *ngIf="popup" class="empDetail">
+
+        <li type="button" (click)="show()" class="m-3 menu"><a>About</a></li>
+      
+      </ul> 
+        <h3 class="profile" (click)="mydetail()"><i class="fa-regular fa-circle-user"></i></h3>
+          
+       
+            <div *ngIf="popup" class="empDetail">
             <div  class="popuptext p-3">
-                 <h5>Employee name : &nbsp; {{EmpId?.name}}</h5>
                    <h5>Employee Id :  &nbsp;{{EmpId?.id}}</h5>
-            </div>
+                   <hr>
+                   <button type="button" routerLink="/login" class="btn mary">Logout</button>
+                  <button type="button" (click)="showProfile()" class="btn mary">profile</button>
     </div>
+      </div>
+     
   </div>
   </div>
 </nav>
@@ -91,9 +98,9 @@
               <div class="col-sm-4 col-md-3 option">
                   <h3>About</h3>
                   <ul>
-                      <li><a href="#" class="optn">Company</a></li>
-                      <li><a href="#" class="optn">Team</a></li>
-                      <li><a href="#" class="optn">Legacy</a></li>
+                      <li><a (click)="show()" class="optn">Company</a></li>
+                      <li><a (click)="show()" class="optn">Team</a></li>
+                      <li><a (click)="show()" class="optn">Legacy</a></li>
                   </ul>
               </div>
               <div class="col-sm-4 col-md-3 option">

@@ -46,7 +46,7 @@
             <thead class="sticky-top tabHead bg-white ">
                 <th scope="col">PRODUCT</th>
                 <th scope="col">PRICE /Kg</th>
-                <th scope="col">QUANTITY /Kg</th>
+                <th scope="col">QUANTITY </th>
                 <th scope="col">PRICE</th>
                 <th scope="col">ACTION</th>
                 
@@ -55,7 +55,7 @@
                 <tr  *ngFor="let bill of billProduct" scope="row">
                 <td class="pt-3">{{bill.proName}}</td>
                 <td class="pt-3">{{bill.price |currency:"INR":"symbol"}}</td>
-                <td class="pt-3">{{bill.tQty}}</td>
+                <td class="pt-3">{{bill.tQty}} Kg</td>
                 <td class="pt-3">{{bill.amount |currency:"INR":"symbol"}}</td>
                 <td> <button class="btn btnn del" (click)="deleteInfo(bill.proName)"><i class="fa-solid fa-trash-can"></i></button></td>
                 </tr>
@@ -73,7 +73,7 @@
             <label for="discount">Discount: </label>
         <input class="discount" type="number" placeholder="  %" formControlName="count" (change)="discountCal()"><i class="fa-solid fa-percent"></i><br>
         </form>
-        <div class="container-fluid total col-6"><strong>Payable Amount {{dPrice | currency:"INR":"symbol"}}</strong></div>
+        <div class="container-fluid total col-6"><strong>Payable Amount </strong>&nbsp;&nbsp;<strong>{{dPrice | currency:"INR":"symbol"}}</strong></div>
        </div>
         
        <div class="save">
