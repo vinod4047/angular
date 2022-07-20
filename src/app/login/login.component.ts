@@ -57,25 +57,18 @@ export class LoginComponent implements OnInit {
         this.logform.reset();
         this.router.navigate(['/AEL'])
         
-      }
-     else{
-      if(emp){
+      }else if(emp){
         console.log(this.eId);
         localStorage.setItem('EmpId', JSON.stringify(this.eId));
           this.logform.reset();
            this.router.navigate(['/bill'])
-      }
-      else{
-        if(wait){
+      }else if(wait){
           this.messageService.add({severity:'warn', summary: 'Warn', detail: 'Your account is not Activated'});
         }else{
           this.messageService.add({severity:'error', summary: 'Error', detail: 'Employee not Founded'});
         }
          
-        }
-     }
-      },
-      error:()=>{
+        },error:()=>{
         alert("error in login")
       }
     })

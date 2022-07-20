@@ -6,24 +6,31 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="logo">V-Shop</div>
                 <ul class="navbar-nav  gap-2">
-                   <li routerLink="/home" class="m-3 menu">Home</li>
-                  <li routerLink="/bill" class="m-3 menu">Billing</li>
-                    <li routerLink="/cusEmp" class="m-3 activeOpt">Customer list</li>
+                   <li routerLink="/home" class="m-3 menu"><a>Home</a></li>
+                  <li routerLink="/bill" class="m-3 menu"><a>Billing</a></li>
+                    <li routerLink="/cusEmp" class="m-3 activeOpt"><a>Customer list</a></li>
                     
                 </ul>
                 <ul class="navbar-nav ms-md-auto gap-2">
-                    <li routerLink="/login" class="m-3 menu">Logout</li>
-                </ul>
-                <h3 class="profile" (click)="mydetail()"><i class="fa-solid fa-circle-user"></i></h3>
-                  <div *ngIf="popup" class="empDetail">
+          
+                  <li type="button" (click)="showAbout()" class="m-3 menu"><a>About</a></li>
+                
+                </ul> 
+                  <h3 class="profile" (click)="mydetail()"><i class="fa-regular fa-circle-user"></i></h3>
+                    
+                 
+                      <div *ngIf="popup" class="empDetail">
                       <div  class="popuptext p-3">
-                           <h5>Employee name : &nbsp; {{EmpId?.name}}</h5>
                              <h5>Employee Id :  &nbsp;{{EmpId?.id}}</h5>
-                      </div>
+                             <hr>
+                             <button type="button" routerLink="/login" class="btn b-mary">Logout</button>
+                            <button type="button" (click)="showProfile()" class="btn b-mary">profile</button>
               </div>
+                </div>
+               
             </div>
             </div>
-          </nav>
+          </nav> 
 
      
   <div class=" contain row-lg-10 row-md-10 row-sm-10 " >

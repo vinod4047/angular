@@ -56,7 +56,21 @@
   width: 185px;
   margin-bottom: 30px;
 }
+.b-mary {
+  float: right;
+  background: #4154a7;
+  background-image: linear-gradient(to bottom left,#4154a7,#5abde4);
 
+  background-position: 100% 0;
+  background-color: #4154a7;
+  transition: all .4s ease;
+  box-shadow: none;
+  color: #fff;
+  margin: 5px;
+}
+.b-mary:hover{
+  box-shadow: #000 2px 2px 4px;
+}
 .cimg{
   height: 125px;
   object-fit: contain;

@@ -68,7 +68,6 @@ export class OrderListComponent implements OnInit {
     this.api.deleteOrd(id)
     .subscribe({
       next:(_res)=>{
-        alert("deleted information.")
         this.popup = !this.popup
         this.loadData()
 

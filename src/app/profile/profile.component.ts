@@ -22,13 +22,16 @@ export class ProfileComponent implements OnInit {
       next:(res)=>{
         console.log(res);
         this.bill=res;
+   this.details = this.bill.filter((emp:any) => emp.empId == this.empdata.id)
+    console.log(this.details);
+    console.log(this.details.length);
+    
       },
       error:(_err)=>{
         alert("error in loadData")
       }
     })
-    this.details = this.bill.filter((emp:any) => emp.EmpId !== this.empdata.id)
-    console.log(this.details);
+   
     
   }
   

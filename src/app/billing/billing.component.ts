@@ -8,6 +8,8 @@ import { DialogService } from 'primeng/dynamicdialog';
 import { AddCusComponent } from '../add-cus/add-cus.component';
 import { BillCusComponent } from '../bill-cus/bill-cus.component';
 import { PrintComponent } from '../print/print.component';
+import { AboutComponent } from '../about/about.component';
+import { ProfileComponent } from '../profile/profile.component';
 
 @Component({
   selector: 'app-billing',
@@ -101,6 +103,34 @@ export class BillingComponent implements OnInit {
       
      
     
+  }
+  showAbout() {
+    const ref = this.dialogService.open(AboutComponent, {
+        header: 'About',
+        width: '60%',
+        contentStyle: {"max-height": "500px", "overflow": "auto"},
+        baseZIndex: 10000
+    });
+  
+    ref.onClose.subscribe({
+
+    
+    });
+  }
+
+  showProfile() {
+    const ref = this.dialogService.open(ProfileComponent, {
+      data:this.EmpId,
+        header: 'Profile',
+        width: '60%',
+        contentStyle: {"max-height": "500px", "overflow": "auto"},
+        baseZIndex: 10000
+    });
+  
+    ref.onClose.subscribe({
+
+    
+    });
   }
 
   addbill(arr:any){ 
